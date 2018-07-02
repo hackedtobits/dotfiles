@@ -1,0 +1,45 @@
+defscrollback	2048
+
+nethack		on
+
+vbell		on
+
+# Message to display in the status line when activity is detected in a
+# monitored window.
+activity	"activity in %n (%t) [%w:%s]~"
+
+# When a bell character is sent to a background window, screen displays a
+# notification in the message line. The notification message can be re-defined
+# by this command.
+bell_msg	"bell in %n (%t) [%w:%s]~"
+
+# Select line break behavior for copying.
+crlf		off
+
+# Set message displayed on pow_detach (when HUP is sent to screen's parent
+# process).
+pow_detach_msg	"BYE"
+
+# An alternative hardstatus to display a bar at the bottom listing the
+# windownames and highlighting the current windowname in blue. (This is only
+# enabled if there is no hardstatus setting for your terminal)
+hardstatus	on
+hardstatus	alwayslastline
+hardstatus	string "%{.bW}%-w%{.gW}%n %t%{-}%{=b bw}%?%+w%? %=%c %m/%d/%Y"
+#sorendition	kw
+
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+
+# erase background with current bg color
+defbce "on"
+
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# Split the screen for monitoring and work
+split
+screen
+focus
+screen

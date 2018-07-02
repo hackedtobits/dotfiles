@@ -1,0 +1,30 @@
+### Default for All ###
+Host *
+     ForwardX11 no
+     ForwardX11Trusted yes
+     Protocol 2
+     ServerAliveInterval 30
+     ServerAliveCountMax 30
+
+Host amanzon-ec2
+     HostName 54.209.246.254
+     User ubuntu
+     IdentityFile /Users/bshayne/Dropbox/keys/casekey.pem
+
+Host mercury
+     Hostname router.hackedtobits.com
+     User bshayne
+     Port 22
+
+Host venus
+     Hostname router.hackedtobits.com
+     User bshayne
+     Port 1022
+
+Host molly
+     Hostname molly.hackedtobits.com
+     User bshayne
+
+Host books
+     Hostname books.hackedtobits.com
+     User bshayne
