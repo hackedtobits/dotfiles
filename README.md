@@ -4,14 +4,14 @@ My dotfiles as managed by rcm.
 ## Quick install to new machine
 1. Clone the repo to the local machine
   ```
-  git clone https://github.com/hackedtobits/dotfiles.git ~/.dotfiles
+  git clone git@github.com:hackedtobits/dotfiles.git ~/.dotfiles
   ```
 1. Run the 'rcup -g'-created install script
   ```
   sh .dotfiles/install.sh
   ```
-  
-## Updating files from ~/.dotfiles
+
+## Updating files in ~/.dotfiles
 1. First, add the new file with rcm
   ```
   mkrc <filename>
@@ -31,3 +31,8 @@ My dotfiles as managed by rcm.
   ```
   git push origin master
   ```
+
+## Get the newest version of the .dotfiles directory
+```
+git pull
+```
