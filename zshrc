@@ -39,7 +39,7 @@ alias vi="vim"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 HIST_STAMPS="mm/dd/yyyy"
@@ -56,17 +56,17 @@ setopt SHARE_HISTORY
 setopt AUTO_CD
 #correct mistakes
 setopt CORRECT
-setopt AUTO_LIST 
+setopt AUTO_LIST
 #allow tab completion in the middle of a word
 setopt COMPLETE_IN_WORD
 #tab completion moves to end of word
 setopt ALWAYS_TO_END
-setopt listtypes 
+setopt listtypes
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man-pages colorize git iwhois nmap tmux ubuntu wd web-search zsh_reload)
+plugins=(brew colored-man-pages colorize git history iterm2 iwhois nmap tmux ubuntu wd web-search zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
