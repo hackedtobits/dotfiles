@@ -1,8 +1,10 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/bshayne/.tmux.conf.local" . 1370)
+(("/home/bshayne/.dotfiles/ssh/config" . 743)
+ ("/home/bshayne/.dotfiles/zshrc" . 2986)
+ ("/home/bshayne/.dotfiles/host-molly/tmux.conf.local" . 8950)
+ ("/home/bshayne/.dotfiles/README.md" . 890)
+ ("/home/bshayne/.ssh/id_rsa.pub" . 395)
  ("/home/bshayne/.tmux.conf" . 47336)
- ("/home/bshayne/.zshrc" . 732)
  ("/etc/apt/sources.list.d/ombi.list" . 22)
  ("/etc/group" . 1242)
- ("/home/bshayne/.ssh/config" . 356)
  ("/home/bshayne/.ssh/authorized_keys" . 2312))

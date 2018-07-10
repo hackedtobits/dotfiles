@@ -7,31 +7,11 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="dpoggi"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Aliases
 alias lo="exit"
-alias ls="ls --color=auto"
 alias ll="ls -lA | more"
 alias lsd="ls -lA | grep ^d"
 alias vi="vim"
-
-# Connect to work systems
-alias test1="ssh bshayne@test1.hltcoe.jhu.edu"
-alias test2="ssh bshayne@test2.hltcoe.jhu.edu"
-alias test3="ssh bshayne@test3.hltcoe.jhu.edu"
-alias test4="ssh bshayne@test4.hltcoe.jhu.edu"
-alias gpsrv5="ssh bshayne@gpsrv5.hltcoe.jhu.edu"
-
-function sync-to(){
-        for i in "$@"; do
-                scp -rp ~/.zshrc ~/.screenrc ~/.tmux.conf ~/.emacs.d ~/.ssh/config ${i}:
-        done
-}
-
-function sync-from(){
-        scp -rp ${1}:.zshrc ${1}:.screenrc ${1}:.tmux.conf ${1}:.emacs.d ${1}:.ssh/config ~
-}
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -113,5 +93,4 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
+export SSH_KEY_PATH="~/.ssh/rsa_id"

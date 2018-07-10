@@ -6,6 +6,7 @@ Host *
      ServerAliveInterval 30
      ServerAliveCountMax 30
 
+# Personal Machines #
 Host amanzon-ec2
      HostName 54.209.246.254
      User ubuntu
@@ -27,4 +28,25 @@ Host molly
 
 Host books
      Hostname books.hackedtobits.com
+     User bshayne
+
+# HLTCOE Machines #
+Host test1
+     Hostname test1.hltcoe.jhu.edu
+     User bshayne
+
+Host test2
+     Hostname test2.hltcoe.jhu.edu
+     User bshayne
+
+Host test3
+     Hostname test3.hltcoe.jhu.edu
+     User bshayne
+
+Host test4
+     Hostname test4.hltcoe.jhu.edu
+     User bshayne
+
+Host gpsrv5
+     Hostname gpsrv5.hltcoe.jhu.edu
      User bshayne
