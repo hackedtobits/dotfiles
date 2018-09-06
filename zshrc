@@ -89,6 +89,9 @@ if [ "$TERM" != "dumb" ]; then
     eval "`dircolors -b $DIR_COLORS`"
 fi
 
+# show system information on login
+if [ -f /usr/bin/neofetch ]; then neofetch; fi
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
