@@ -90,7 +90,7 @@ if [ "$TERM" != "dumb" ]; then
 fi
 
 # show system information on login
-if [ -f /usr/bin/neofetch ]; then neofetch; fi
+#if [ -f /usr/bin/neofetch ]; then neofetch; fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
