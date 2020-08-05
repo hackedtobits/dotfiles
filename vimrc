@@ -1,8 +1,8 @@
 " COLORS
 syntax enable
-set background=light
-let g:solarized_termcolors=256
-colorscheme solarized
+"set background=light
+"let g:solarized_termcolors=256
+"colorscheme solarized
 " MISC
 set ttyfast                     " faster redraw
 set backspace=indent,eol,start
