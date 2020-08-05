@@ -8,10 +8,17 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="dpoggi"
 
 # Aliases
+#alias less="cless"     # Causes zsh segfault in Ubuntu
+alias cat="ccat"
 alias lo="exit"
 alias ll="ls -lA | more"
 alias lsd="ls -lA | grep ^d"
-alias vi="vim"
+if type vim >/dev/null 2>/dev/null; then
+    alias vi="vim"
+fi
+if type neomutt >/dev/null 2>/dev/null; then
+    alias vi="vim"
+fi
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -88,7 +95,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/opt/coreutils/libexec/gnubin:/snap/bin:$PATH"
+export GOPATH=$HOME/go
+export PATH="/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/opt/coreutils/libexec/gnubin:/snap/bin:$HOME/bin:$GOPATH/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # # Preferred editor for local and remote sessions
