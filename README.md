@@ -11,23 +11,28 @@ My dotfiles as managed by rcm.
   sh .dotfiles/install.sh
   ```
 
-## Updating files in ~/.dotfiles
-1. First, add the new file with rcm
+## Adding files in ~/.dotfiles
+  First, add the new file with rcm
   ```
   mkrc <filename>
   ```
   The specified file will be moved to the `~/.dotfiles` directory with the
   dot prefix removed. The original file will be deleted,
   then symlinked from `~/.dotfiles` back to its original location.
-1. Propose addition to the repository
+
+  Then, follow the instructions below, starting at #2.
+
+## Updating files in ~/.dotfiles
+1. Edit the file in question.
+2. Propose addition to the repository
   ```
   git add <filename>
   ```
-1. Actually commit these changes
+3. Commit these changes
   ```
   git commit -m "Commit message"
   ```
-1. Send these changes to the remote repository
+4. Send these changes to the remote repository
   ```
   git push origin master
   ```
