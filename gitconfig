@@ -1,5 +1,5 @@
 [user]
 	email = shayne@hackedtobits.com
-	name = Benjamin Shayne
+	name = Ben Shayne
 [core]
-	editor = emacs
+	editor = vim
