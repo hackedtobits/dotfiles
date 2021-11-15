@@ -1,5 +1,5 @@
 # hackedtobits' dotfiles
-My dotfiles as managed by rcm.
+My dotfiles as managed by rcm (https://thoughtbot.github.io/rcm/)
 
 ## Quick install to new machine
 1. Clone the repo to the local machine
