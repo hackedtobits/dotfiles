@@ -76,7 +76,6 @@ handle_file_ln "/home/bshayne/.dotfiles/emacs.d/elpa/gnupg/trustdb.gpg" "/home/b
 handle_file_ln "/home/bshayne/.dotfiles/emacs.d/init.el" "/home/bshayne/.emacs.d/init.el"
 handle_file_ln "/home/bshayne/.dotfiles/emacs.d/places" "/home/bshayne/.emacs.d/places"
 handle_file_ln "/home/bshayne/.dotfiles/gitconfig" "/home/bshayne/.gitconfig"
-handle_file_ln "/home/bshayne/.dotfiles/install.sh" "/home/bshayne/.install.sh"
 handle_file_ln "/home/bshayne/.dotfiles/mutt" "/home/bshayne/.mutt"
 handle_file_ln "/home/bshayne/.dotfiles/muttrc" "/home/bshayne/.muttrc"
 handle_file_ln "/home/bshayne/.dotfiles/README.md" "/home/bshayne/.README.md"
