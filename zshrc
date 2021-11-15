@@ -17,7 +17,7 @@ if type vim >/dev/null 2>/dev/null; then
     alias vi="vim"
 fi
 if type neomutt >/dev/null 2>/dev/null; then
-    alias vi="vim"
+    alias mutt="neomutt"
 fi
 
 # Set to this to use case-sensitive completion
