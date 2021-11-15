@@ -88,7 +88,6 @@ plugins=(
     wd
     web-search
     yum
-    zsh_reload
     )
 
 source $ZSH/oh-my-zsh.sh
