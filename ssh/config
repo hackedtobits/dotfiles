@@ -7,46 +7,15 @@ Host *
      ServerAliveCountMax 30
 
 # Personal Machines #
-Host amanzon-ec2
-     HostName 54.209.246.254
-     User ubuntu
-     IdentityFile /Users/bshayne/Dropbox/keys/casekey.pem
-
-Host mercury
+Host uranus
      Hostname router.hackedtobits.com
      User bshayne
      Port 22
 
-Host venus
-     Hostname router.hackedtobits.com
-     User bshayne
-     Port 1022
-
-Host molly
-     Hostname molly.hackedtobits.com
+Host web
+     Hostname web.endcube.com
      User bshayne
 
-Host books
-     Hostname books.hackedtobits.com
-     User bshayne
-
-# HLTCOE Machines #
-Host test1
-     Hostname test1.hltcoe.jhu.edu
-     User bshayne
-
-Host test2
-     Hostname test2.hltcoe.jhu.edu
-     User bshayne
-
-Host test3
-     Hostname test3.hltcoe.jhu.edu
-     User bshayne
-
-Host test4
-     Hostname test4.hltcoe.jhu.edu
-     User bshayne
-
-Host gpsrv5
-     Hostname gpsrv5.hltcoe.jhu.edu
+Host media
+     Hostname media.endcube.com
      User bshayne
