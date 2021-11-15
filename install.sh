@@ -4,7 +4,7 @@
 #
 #    sh install.sh
 #
-# Environment variables: VERBOSE, CP, LN, MKDIR, RM, DIRNAME, XARGS.
+# Environment variables: VERBOSE, CP, LN, MKDIR, RM, DIRNAME.
 #
 #    env VERBOSE=1 sh install.sh
 #
@@ -22,7 +22,6 @@
 : ${MKDIR:=/bin/mkdir}
 : ${RM:=/bin/rm}
 : ${DIRNAME:=/usr/bin/dirname}
-: ${XARGS:=/usr/bin/xargs}
 verbose() {
   if [ "$VERBOSE" -gt 0 ]; then
     echo "$@"
@@ -43,7 +42,7 @@ handle_file_cp() {
     esac
   fi
   verbose "'$1' -> '$2'"
-  $DIRNAME "$2" | $XARGS $MKDIR -p
+  $MKDIR -p "$($DIRNAME "$2")"
   $CP -R "$1" "$2"
 }
 handle_file_ln() {
@@ -61,7 +60,7 @@ handle_file_ln() {
     esac
   fi
   verbose "'$1' -> '$2'"
-  $DIRNAME "$2" | $XARGS $MKDIR -p
+  $MKDIR -p "$($DIRNAME "$2")"
   $LN -sf "$1" "$2"
 }
 handle_file_ln "/home/bshayne/.dotfiles/bash_profile" "/home/bshayne/.bash_profile"
@@ -78,6 +77,8 @@ handle_file_ln "/home/bshayne/.dotfiles/emacs.d/init.el" "/home/bshayne/.emacs.d
 handle_file_ln "/home/bshayne/.dotfiles/emacs.d/places" "/home/bshayne/.emacs.d/places"
 handle_file_ln "/home/bshayne/.dotfiles/gitconfig" "/home/bshayne/.gitconfig"
 handle_file_ln "/home/bshayne/.dotfiles/install.sh" "/home/bshayne/.install.sh"
+handle_file_ln "/home/bshayne/.dotfiles/mutt" "/home/bshayne/.mutt"
+handle_file_ln "/home/bshayne/.dotfiles/muttrc" "/home/bshayne/.muttrc"
 handle_file_ln "/home/bshayne/.dotfiles/README.md" "/home/bshayne/.README.md"
 handle_file_ln "/home/bshayne/.dotfiles/screenrc" "/home/bshayne/.screenrc"
 handle_file_ln "/home/bshayne/.dotfiles/ssh/config" "/home/bshayne/.ssh/config"
