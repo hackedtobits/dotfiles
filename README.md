@@ -4,9 +4,9 @@ My dotfiles as managed by rcm (https://thoughtbot.github.io/rcm/)
 ## Quick install to new machine
 1. Clone the repo to the local machine
   ```
-  git clone git@github.com:hackedtobits/dotfiles.git ~/.dotfiles
+  git clone https://github.com/hackedtobits/dotfiles.git ~/.dotfiles
   ```
-1. Run the 'rcup -g'-created install script
+2. Run the 'rcup -g'-created install script
   ```
   sh .dotfiles/install.sh
   ```
