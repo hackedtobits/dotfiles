@@ -7,15 +7,10 @@ Host *
      ServerAliveCountMax 30
 
 # Personal Machines #
-Host uranus
-     Hostname router.hackedtobits.com
-     User bshayne
-     Port 22
-
 Host web
      Hostname web.endcube.com
      User bshayne
 
-Host media
-     Hostname media.endcube.com
+Host venus
+     Hostname venus.hackedtobits.com
      User bshayne
