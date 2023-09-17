@@ -13,8 +13,8 @@ alias cat="ccat"
 alias lo="exit"
 alias ll="ls -lA | more"
 alias lsd="ls -lA | grep ^d"
-if type vim >/dev/null 2>/dev/null; then
-    alias vi="vim"
+if type nvim >/dev/null 2>/dev/null; then
+    alias vi="nvim"
 fi
 if type neomutt >/dev/null 2>/dev/null; then
     alias mutt="neomutt"
