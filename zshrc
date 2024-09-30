@@ -88,9 +88,13 @@ plugins=(
     wd
     web-search
     yum
+    zsh-autosuggestions
     )
 
 source $ZSH/oh-my-zsh.sh
+
+# FISH-like syntax highlighting
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # User configuration
 
