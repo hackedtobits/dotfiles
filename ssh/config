@@ -14,3 +14,14 @@ Host web
 Host venus
      Hostname venus.hackedtobits.com
      User bshayne
+
+Host mars
+    Hostname 192.168.1.118
+    User bshayne
+
+Host switch1
+    Hostname 192.168.1.3
+    User admin
+    KexAlgorithms +diffie-hellman-group1-sha1
+    HostKeyAlgorithms = +ssh-rsa
+    PubkeyAcceptedAlgorithms = +ssh-rsa
