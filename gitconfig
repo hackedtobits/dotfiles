@@ -2,4 +2,4 @@
 	email = shayne@hackedtobits.com
 	name = Ben Shayne
 [core]
-	editor = vim
+	editor = nvim
